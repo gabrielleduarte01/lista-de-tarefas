@@ -1,0 +1,80 @@
+/* @charset "UTF-8"; */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    --text-color: #FFF;
+    --primary-color: #41b883;
+    --secundary-color: #d1d3d4;
+}
+body {
+    height: 100vh; /* para ocupar toda altura da tela */
+    background: linear-gradient(90deg, rgb(65, 184, 131, 1) 0%, rgb(0, 212, 255, 1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    border: 2px solid var(--text-color);
+    padding: 30px 40px;
+    width: 40%;
+    min-width: 500px;
+}
+
+.new-task-container {
+    background-color: var(--text-color);
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 15px 30px rgb(0, 0, 0, 0.3);
+    display: flex;
+}
+
+.new-task-container input {
+    flex: 3; /*ajustar largura do input*/
+    font-size: 1rem;
+    border: 2px solid var(--secundary-color);
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.new-task-container input:focus {
+    outline: none;
+    border-color: var(--primary-color);
+}
+.new-task-button {
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.tasks-container {
+    background-color: var(--text-color);
+    padding: 30px 20px;
+    margin-top: 60px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgb(0, 0, 0, 0.3);
+    width: 100%;
+}
+
+/* Utilities */
+.error {
+    border: 2px solid red !important;
+}
+
+.error::placeholder {
+    color: red;
+}
