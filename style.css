@@ -70,6 +70,25 @@ body {
     width: 100%;
 }
 
+.task-item {
+    display: flex;  /*texto ao lado do icone*/
+    justify-content: space-between; /*espaço entre si de forma que ocupe toda a largura*/
+    align-items: center; /*centralizado verticalmente*/
+    margin-bottom: 6px;
+    margin-top: 6px;
+}
+
+.task-item i {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 12px;
+    border-radius: 5px;
+}
+
+.task-item i:hover {
+    cursor: pointer;
+}
+
 /* Utilities */
 .error {
     border: 2px solid red !important;
@@ -77,4 +96,8 @@ body {
 
 .error::placeholder {
     color: red;
+}
+
+.completed {
+    text-decoration: line-through;
 }
