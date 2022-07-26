@@ -85,8 +85,8 @@ const handleInputChange = () => {
 const updateLocalStorage = () => {
   const tasks = tasksContainer.childNodes;
 
-  const localStorageTasks = [...tasks].map((taskv) => {
-    const content = taskv.firstChild;
+  const localStorageTasks = [...tasks].map((tasks) => {
+    const content = tasks.firstChild;
 
     const isCompleted = content.classList.contains("completed");
 
